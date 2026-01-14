@@ -3,28 +3,34 @@ package org.example;
 public class LibraryItem {
 
     protected String title;
-    protected int year;
     protected String author;
+    protected int year;
 
-    public LibraryItem(String title, int year, String author) {
+    public LibraryItem(String title, String author, int year) {
         this.title = title;
-        this.year = year;
         this.author = author;
+        this.year = year;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getYear() {
-        return year;
-    }
-
     public String getAuthor() {
         return author;
     }
 
+    public int getYear() {
+        return year;
+    }
+
+    @Override
     public String toString() {
         return "Item: " + title + " by " + author + " (" + year + ")";
     }
 }
+// This assignment in particular was a disaster.
+// I ran into an issue where the code provided in main did not match the test code
+// I do confess that I was not entirely aware of how imperative the order of the fields were.
+// The issue lies in the fact that I even after fixing my mistake, the code did not work.
+// This was frustrating, but I think it is the most effort i've put into a java assignment. It clicked.

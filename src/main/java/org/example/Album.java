@@ -4,8 +4,8 @@ public class Album extends LibraryItem {
 
     protected int trackCount;
 
-    public Album(String title, int year, String author, int trackCount) {
-        super(title, year, author);
+    public Album(String title, String author, int year, int trackCount) {
+        super(title, author, year);
         this.trackCount = trackCount;
     }
 
@@ -15,6 +15,6 @@ public class Album extends LibraryItem {
 
     @Override
     public String toString() {
-        return "Album: " + title + " by " + author + "(" + year + ") - " + trackCount + "tracks";
+        return "Album: " + title + " by " + author + " (" + year + ") - " + trackCount + " tracks";
     }
 }

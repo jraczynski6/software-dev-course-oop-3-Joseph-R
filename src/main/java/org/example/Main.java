@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
     private static Scanner scanner = new Scanner(System.in);
     private static List<LibraryItem> library = new ArrayList<>();
 
@@ -12,7 +13,6 @@ public class Main {
         System.out.println("---------------------------------");
         System.out.println(" Welcome to the Library Manager!");
         System.out.println("---------------------------------");
-
         mainMenu();
     }
 
@@ -27,20 +27,14 @@ public class Main {
 
             String choice = scanner.nextLine();
 
-            if (choice.equals("1")) {
-                listAllItems();
-            } else if (choice.equals("2")) {
-                addNewBook();
-            } else if (choice.equals("3")) {
-                addNewAlbum();
-            } else if (choice.equals("4")) {
-                addNewMovie();
-            } else if (choice.equals("5")) {
-                readBooks();
-            } else if (choice.equals("6")) {
-                break;
-            } else {
-                System.out.println("Invalid choice");
+            switch (choice) {
+                case "1" -> listAllItems();
+                case "2" -> addNewBook();
+                case "3" -> addNewAlbum();
+                case "4" -> addNewMovie();
+                case "5" -> readBooks();
+                case "6" -> { return; }
+                default -> System.out.println("Invalid choice");
             }
         }
     }
@@ -58,9 +52,10 @@ public class Main {
         String author = scanner.nextLine();
         System.out.println("Enter year:");
         int year = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Enter page count:");
         int pageCount = scanner.nextInt();
-
+        scanner.nextLine();
         library.add(new Book(title, author, year, pageCount));
     }
 
@@ -71,9 +66,10 @@ public class Main {
         String author = scanner.nextLine();
         System.out.println("Enter year:");
         int year = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Enter track count:");
         int trackCount = scanner.nextInt();
-
+        scanner.nextLine();
         library.add(new Album(title, author, year, trackCount));
     }
 
@@ -84,9 +80,10 @@ public class Main {
         String author = scanner.nextLine();
         System.out.println("Enter year:");
         int year = scanner.nextInt();
+        scanner.nextLine();
         System.out.println("Enter duration in minutes:");
         int durationInMinutes = scanner.nextInt();
-
+        scanner.nextLine();
         library.add(new Movie(title, author, year, durationInMinutes));
     }
 
