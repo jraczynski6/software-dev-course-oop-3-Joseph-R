@@ -11,4 +11,20 @@ public class LibraryItem {
         this.year = year;
         this.author = author;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String toString() {
+        return "Item: " + title + " by " + author + " (" + year + ")";
+    }
 }
