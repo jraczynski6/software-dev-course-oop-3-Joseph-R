@@ -15,6 +15,6 @@ public class Album extends LibraryItem {
 
     @Override
     public String toString() {
-        return "Album " + title + " by " + author + "(" + year + ") - " + trackCount + "tracks";
+        return "Album: " + title + " by " + author + "(" + year + ") - " + trackCount + "tracks";
     }
 }

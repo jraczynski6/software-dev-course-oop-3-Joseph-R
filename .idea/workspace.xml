@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e654d077-1dfc-4957-ac19-1f87429c9084" name="Changes" comment="Add Methods to LibraryItem">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e654d077-1dfc-4957-ac19-1f87429c9084" name="Changes" comment="Create Album subclass">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Album.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,12 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1768353981579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create Album subclass">
+      <option name="closed" value="true" />
+      <created>1768354870318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768354870318</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create LibraryItem: fields and constructor" />
     <MESSAGE value="Add Methods to LibraryItem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Methods to LibraryItem" />
+    <MESSAGE value="Create Album subclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Album subclass" />
   </component>
 </project>
